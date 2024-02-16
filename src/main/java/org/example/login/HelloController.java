@@ -4,11 +4,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+<<<<<<< HEAD
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+=======
+>>>>>>> refs/remotes/origin/master
 
 public class HelloController {
     @FXML
@@ -27,6 +30,7 @@ public class HelloController {
             lbllogin.setText("Login Failed");
         }
     }
+<<<<<<< HEAD
 
     @FXML
     private void handleCreateButtonAction() {
@@ -43,4 +47,6 @@ public class HelloController {
             e.printStackTrace();
         }
     }
+=======
+>>>>>>> refs/remotes/origin/master
 }

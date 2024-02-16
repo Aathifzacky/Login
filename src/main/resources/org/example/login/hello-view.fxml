@@ -65,7 +65,11 @@
             <Font name="Arial" size="16.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Button contentDisplay="CENTER" layoutX="192.0" layoutY="344.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" style="-fx-background-color: none; -fx-font-size: 16px; -fx-font-weight: bold;" text="Create" textAlignment="CENTER" textFill="WHITE" underline="true" onAction="#handleCreateButtonAction">
+=======
+      <Button contentDisplay="CENTER" layoutX="192.0" layoutY="344.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" style="-fx-background-color: none; -fx-font-size: 16px; -fx-font-weight: bold;" text="Create" textAlignment="CENTER" textFill="WHITE" underline="true">
+>>>>>>> refs/remotes/origin/master
          <font>
             <Font size="18.0" />
          </font>
