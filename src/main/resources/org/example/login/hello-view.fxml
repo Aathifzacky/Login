@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to bottom, #004747 0%, #330867 100%); -fx-border-color: orange; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.login.HelloController">
+   <children>
+      <Label fx:id="lbllogin" layoutX="72.0" layoutY="14.0" prefHeight="27.0" prefWidth="154.0" style="-fx-alignment: center; -fx-font-weight: bold;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtusername" layoutX="51.0" layoutY="121.0" prefHeight="41.0" prefWidth="198.0" promptText="User Name" style="-fx-background-color: #101f36; -fx-text-fill: white; -fx-padding: 10px 15px 10px 10px; -fx-border-color: white; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="txtpassword" layoutX="51.0" layoutY="184.0" prefHeight="41.0" prefWidth="198.0" promptText="Password" style="-fx-background-color: #101f36; -fx-text-fill: white; -fx-padding: 10px; -fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </PasswordField>
+      <Button alignment="CENTER" defaultButton="true" layoutX="102.0" layoutY="245.0" mnemonicParsing="false" onAction="#Login" prefHeight="42.0" prefWidth="95.0" style="-fx-background-color: #217fad; -fx-border-color: orange; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-width: 2px; -fx-padding: 5px; -fx-font-weight: bold; -fx-font-size: 16;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" layoutX="43.0" layoutY="294.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: #217fad; -fx-border-color: orange; -fx-border-width: 2px; -fx-padding: 5px; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-font-weight: bold; -fx-font-size: 16;" text="Continue with Google" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="110.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.39999999999998" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@/icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="40.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Button contentDisplay="CENTER" layoutX="192.0" layoutY="344.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" style="-fx-background-color: none; -fx-font-size: 16px; -fx-font-weight: bold;" text="Create" textAlignment="CENTER" textFill="WHITE" underline="true" onAction="#handleCreateButtonAction">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
